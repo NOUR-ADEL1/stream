@@ -74,4 +74,7 @@ predicted_result = prediction_mapping[prediction[0]]
 
 
 # عرض التنبؤ للمستخدم
-st.write(f"HAVE DEPRESSION: {predicted_result}")س
+
+
+
+st.write(f"HAVE DEPRESSION: {predicted_result}")
