@@ -9,10 +9,9 @@ def train_and_save_model():
     # تحميل البيانات
     df = pd.read_csv('workspace/pp.csv')
     df = df.drop(columns=['id'], errors='ignore')  # 'errors="ignore"' يعني أنه إذا كان العمود غير موجود، لا تظهر أي خطأ
-    df=df.drop(columns=['City'],errors='ignore')
     # حذف عمود "id" إذا كان موجودًا
     
-    # تقسيم البيانات
+    # احدد البيانات
     X = df.drop(columns=['Depression'])
     y = df['Depression']
     
