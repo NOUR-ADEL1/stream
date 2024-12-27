@@ -1,6 +1,6 @@
 # Core Data Science Libraries
-numpy>=1.22
-pandas>=1.5
+numpy==1.22
+pandas==1.5
 scikit-learn==1.0.2
 
 # Machine Learning & Model Training
