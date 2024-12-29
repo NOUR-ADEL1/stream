@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 # تحميل النموذج المدرب
 model = joblib.load('src/trained_model.pkl')
 
-# عنوان التطبيق
+# عنوان التطبيقس
 st.title('Mental Health Prediction')
 
 # جمع المدخلات من المستخدم
