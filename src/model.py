@@ -10,7 +10,8 @@ def train_and_save_model():
     df = pd.read_csv('workspace/pp.csv')
     df = df.drop(columns=['id'], errors='ignore')  # 'errors="ignore"' يعني أنه إذا كان العمود غير موجود، لا تظهر أي خطأ
     # حذف عمود "id" إذا كان موجودًا
-    
+    df = df.drop(columns=['City'], errors='ignore')  # 'errors="ignore"' يعني أنه إذا كان العمود غير موجود، لا تظهر أي خطأ
+
     # احدد البيانات
     X = df.drop(columns=['Depression'])
     y = df['Depression']
